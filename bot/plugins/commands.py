@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@MF_MOVIES1"
+    update_channel = "@Tamil_Rockers_Villa"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🤭 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വേണോ? അതിനായി ആദ്യം നിങ്ങൾ ചെയ്യേണ്ടത് ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ആവുക എന്നതാണ്🤭... 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ AND FEEL THE MAGIC.😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🤭JOIN OUR CHANNEL🤭 ", url=f"https://t.me/MF_MOVIES1")]
+                    [ InlineKeyboardButton(text=" 🤭JOIN OUR CHANNEL🤭 ", url=f"https://t.me/Tamil_Rockers_Villa")]
               ])
             )
             return
@@ -48,14 +48,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = "🔰👉 കൂടുതൽ സിനിമകൾക്കും മറ്റു വിവരങ്ങൾക്കുമായി ഞങ്ങളുടെ Group ൽ ജോയിൻ ചെയ്യൂ🌟\n\n༺ ──•◈•─ ─•◈•──༻ \nChannel🌐➧ @MF_MOVIES1Group   \n👥➧ @MF_CHATGROUP",
+                caption = "🔰👉 കൂടുതൽ സിനിമകൾക്കും മറ്റു വിവരങ്ങൾക്കുമായി ഞങ്ങളുടെ Group ൽ ജോയിൻ ചെയ്യൂ🌟\n\n༺ ──•◈•─ ─•◈•──༻ \nChannel🌐➧ @Tamil_Rockers_Villa  \n👥➧ @Movies_Villa_Group",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'CHANNEL🤪', url="https://t.me/MF_MOVIES1"
+                                    '🔘 CHANNEL 🔘', url="https://t.me/Tamil_Rockers_Villa"
                                 )
                         ]
                     ]
